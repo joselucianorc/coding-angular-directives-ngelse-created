@@ -1,0 +1,20 @@
+<div *ngIf="mostrarCursos">
+    Lista de cursos aqui.
+</div>
+
+<div *ngElse="mostrarCursos">
+    Não existem cursos para serem listados.
+</div>
+
+<br>
+
+<button (click)="onMostrarCursos()">
+    Mostrar ou esconder cursos
+</button>
+
+<!-- Desestruturando e utilizando a diretiva na sua forma original -->
+<!-- <template [ngElse]="mostrarCursos">
+    <div>
+        Não existem cursos para serem listados.
+    </div>
+</template> -->
